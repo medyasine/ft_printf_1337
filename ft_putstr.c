@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 10:42:36 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/13 11:33:31 by yassine          ###   ########.fr       */
+/*   Created: 2024/11/13 10:59:13 by yassine           #+#    #+#             */
+/*   Updated: 2024/11/13 12:12:36 by yassine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINT_F
-#define PRINT_F
+#include "ft_printf.h"
 
-#include <stdarg.h>
-#include <unistd.h>
+int ft_putstr(char * str)
+{
+	int i;
+	int len;
 
-
-int	ft_printf(const char *s, ...);
-int	ft_putchar(char c);
-int ft_putstr(char * str);
-int ft_putnbr(int n);
-int ft_putunbr(unsigned long nb);
-
-#endif
+	i = 0;
+	len = 0;
+	if (!str)
+	{
+		len += ft_putstr("(null)");
+	}
+	else
+	{
+		while (str[i])
+		{
+			len += ft_putchar(str[i]);
+			i++;
+		}
+	}
+	return (len);
+}
