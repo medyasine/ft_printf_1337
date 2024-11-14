@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:42:33 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/13 12:28:19 by yassine          ###   ########.fr       */
+/*   Updated: 2024/11/14 12:37:23 by masnus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ static int my_helper(va_list ap, char c)
 	else if(c == 'd' || c == 'i')
 		 len +=  ft_putnbr(va_arg(ap, int));
 	else if(c == 'u')
-		len +=  ft_putunbr(va_arg(ap, int));
-	//else if(c == 'p')
-	//else if(c == 'i')
-	//else if(c == 'x')
-	//else if(c == 'X')
+		len +=  ft_putunbr(va_arg(ap, unsigned int));
+	else if(c == 'x' || c == 'X')
+		len += ft_puthexa(va_arg(ap, unsigned int), c);
+	else if(c == 'p')
+		len =  len + ft_putstr("0x") + ft_puthexa(va_arg(ap, unsigned long), c);
 	return (len);
 }
 

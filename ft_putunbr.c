@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:59:02 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/13 11:33:10 by yassine          ###   ########.fr       */
+/*   Updated: 2024/11/14 12:15:00 by masnus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putunbr(unsigned long nb)
+int ft_putunbr(unsigned int nb)
 {
 	int len;
 

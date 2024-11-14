@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:42:36 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/13 11:33:31 by yassine          ###   ########.fr       */
+/*   Updated: 2024/11/14 12:38:12 by masnus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_printf(const char *s, ...);
 int	ft_putchar(char c);
 int ft_putstr(char * str);
 int ft_putnbr(int n);
-int ft_putunbr(unsigned long nb);
+int ft_putunbr(unsigned int nb);
+int ft_puthexa(unsigned long hexa, char format);
 
 #endif
