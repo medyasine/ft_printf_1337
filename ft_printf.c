@@ -6,7 +6,7 @@
 /*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:42:33 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/14 12:37:23 by masnus           ###   ########.fr       */
+/*   Updated: 2024/11/15 11:40:40 by masnus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int	ft_printf(const char *s, ...)
 
 	i = 0;
 	len = 0;
+	if(write(1, "", 0) == -1)
+		return (-1);
 	va_start(ap, s);
 	while (s[i])
 	{
