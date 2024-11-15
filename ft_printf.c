@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:42:33 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/15 11:41:16 by masnus           ###   ########.fr       */
+/*   Updated: 2024/11/15 12:50:35 by yassine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ static int	my_helper(va_list ap, char c)
 
 int	ft_printf(const char *s, ...)
 {
-	va_list ap;
-	int i;
-	int len;
+	va_list	ap;
+	int		i;
+	int		len;
 
 	i = 0;
 	len = 0;

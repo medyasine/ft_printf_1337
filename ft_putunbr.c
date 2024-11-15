@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: masnus <masnus@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:59:02 by yassine           #+#    #+#             */
-/*   Updated: 2024/11/15 11:42:03 by masnus           ###   ########.fr       */
+/*   Updated: 2024/11/15 12:50:05 by yassine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putunbr(unsigned int nb)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (nb >= 10)
